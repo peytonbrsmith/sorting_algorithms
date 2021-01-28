@@ -1,5 +1,8 @@
 # 0x1B. C - Sorting algorithms & Big O
 
+### Language: <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="20" height="20"/>
+
+
 ## Resources:books:
 Read or watch:
 * [Sorting algorithm](https://intranet.hbtn.io/rltoken/tmzgO7xhCpNgPUxVhLKibw)
