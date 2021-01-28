@@ -1,8 +1,5 @@
 # 0x1B. C - Sorting algorithms & Big O
 
-### Language: <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="20" height="20"/>
-
-
 ## Resources:books:
 Read or watch:
 * [Sorting algorithm](https://intranet.hbtn.io/rltoken/tmzgO7xhCpNgPUxVhLKibw)
@@ -27,6 +24,7 @@ What you should learn from this project:
 * What is the Big O notation, and how to evaluate the time complexity of an algorithm
 * How to select the best sorting algorithm for a given input
 * What is a stable sorting algorithm
+* Written in: <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="20" height="20"/>
 
 ---
 ## Tasks ✔️
