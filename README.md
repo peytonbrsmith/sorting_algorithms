@@ -1,6 +1,6 @@
 # 0x1B. C - Sorting algorithms & Big O
 
-## Resources:books:
+## Resources :books:
 Read or watch:
 * [Sorting algorithm](https://intranet.hbtn.io/rltoken/tmzgO7xhCpNgPUxVhLKibw)
 * [Big O notation](https://intranet.hbtn.io/rltoken/XrLMaOhUMHfwsFEz15TVow)
@@ -8,7 +8,7 @@ Read or watch:
 * [15 sorting algorithms in 6 minutes](https://intranet.hbtn.io/rltoken/RdvoGNMTJ6Hq34aJ_HmCqA)
 
 ---
-## Learning Objectives:bulb:
+## Learning Objectives :bulb:
 What you should learn from this project:
 
 * At least four different sorting algorithms
@@ -17,9 +17,7 @@ What you should learn from this project:
 * What is a stable sorting algorithm
 
 ---
-## Requirements⚙️
-What you should learn from this project:
-
+## Requirements ⚙️
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
