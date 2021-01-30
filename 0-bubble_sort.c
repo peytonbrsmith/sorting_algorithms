@@ -10,7 +10,7 @@ void bubble_sort(int *array, size_t size)
 {
 	unsigned long int i, j;
 
-	while (check_sort(array, size) != 0 && size > 2)
+	while (check_arraysort(array, size) != 0 && size > 2)
 	{
 		for (i = 0; i < (size - 1); i++)
 		{
@@ -33,7 +33,7 @@ void bubble_sort(int *array, size_t size)
  *
  * Return: 0 if sorted -1 if not
  */
-int check_sort(int *array, size_t size)
+int check_arraysort(int *array, size_t size)
 {
 	unsigned long int i;
 
