@@ -20,13 +20,17 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/* Holberton Given/Used Functions */
+/* Holberton Given Functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
-/* My Functions */
+/* Primary Functions */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+
+/* Secondary Functions */
 int check_arraysort(int *array, size_t size);
 void swap(int *first, int *second);
 
