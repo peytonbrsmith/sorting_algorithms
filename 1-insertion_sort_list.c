@@ -1,38 +1,49 @@
 #include "sort.h"
 /**
  * insertion_sort_list - the entrance of the insertion sort algorithm
- * @array: the array to sort
- * @size: the size of the array
+ * @list: the list to sort
  *
  * Returns void
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *previous, *current;
+	listint_t *current, *previous, *compare;
 
-	current = (*list)->next;
+	if (list == NULL || *list == NULL)
+		return;
+	if (((*list)->next) == NULL)
+		return;
+	previous = (*list);
+	current = previous->next;
 	while (current)
 	{
 		previous = current->prev;
-		if (previous->n > current->n)
+		compare = previous;
+		while (current->n < previous->n)
 		{
 			previous->next = current->next;
-			current->next = previous;
 			current->prev = previous->prev;
+			if (previous->prev)
+				previous->prev->next = current;
+			if (current->next)
+				current->next->prev = previous;
+			current->next = previous;
 			previous->prev = current;
+			if (current->prev)
+				previous = current->prev;
+			else
+			{
+				(*list) = current;
+				print_list(*list);
+				break;
+			}
 			print_list(*list);
 		}
-		current = current->next;
-	}
-}
-
-int check_listsort(listint_t **list)
-{
-	listint_t *current = (*list)->next;
-
-	while (current)
-	{
-		if (current->n < )
-		current = current->next;
+		if (current->n < compare->n)
+			current = compare->next;
+		else if (compare->next)
+			current = compare->next->next;
+		else
+			current = compare->next;
 	}
 }
