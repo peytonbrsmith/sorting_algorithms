@@ -11,7 +11,7 @@ void selection_sort(int *array, size_t size)
 	unsigned long int i, j;
 	int min_index;
 
-	for (i = 0; i < (size - 1); i++)
+	for (i = 0; i < (size - 1) && size > 2; i++)
 	{
 		min_index = i;
 		for (j = i + 1; j < size; j++)
@@ -24,4 +24,17 @@ void selection_sort(int *array, size_t size)
 		swap(&array[i], &array[min_index]);
 		print_array(array, size);
 	}
+}
+/**
+ * swap - swaps integers in an array
+ * @first: 1st int
+ * @second: 2nd int
+ *
+ * Returns void
+ */
+void swap(int *first, int *second)
+{
+	int temp = *first;
+	*first = *second;
+	*second = temp;
 }
