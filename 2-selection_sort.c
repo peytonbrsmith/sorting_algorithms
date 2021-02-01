@@ -8,8 +8,7 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	unsigned long int i, j;
-	int min_index;
+	unsigned long int i, j, min_index;
 
 	for (i = 0; i < (size - 1) && size > 2; i++)
 	{
@@ -21,8 +20,11 @@ void selection_sort(int *array, size_t size)
 				min_index = j;
 			}
 		}
-		swap(&array[i], &array[min_index]);
-		print_array(array, size);
+		if (min_index != i)
+		{
+			swap(&array[i], &array[min_index]);
+			print_array(array, size);
+		}
 	}
 }
 /**
